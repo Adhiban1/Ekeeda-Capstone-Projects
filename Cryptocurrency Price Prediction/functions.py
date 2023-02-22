@@ -72,6 +72,7 @@ def graph(coinpair):
 
 def html_report(coinpairs):
     for coinpair in coinpairs:
+        print(coinpair)
         graph(coinpair)
 
     html = '''<!DOCTYPE html>
