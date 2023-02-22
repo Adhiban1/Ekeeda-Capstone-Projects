@@ -2,7 +2,7 @@
 
 ## Clone
 ```
-https://github.com/Adhiban1/Ekeeda-Capstone-Projects.git
+git clone https://github.com/Adhiban1/Ekeeda-Capstone-Projects.git
 ```
 Run this command in terminal to clone this repo.
 ## Install dependencies
