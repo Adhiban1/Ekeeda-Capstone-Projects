@@ -5,6 +5,13 @@
 git clone https://github.com/Adhiban1/Ekeeda-Capstone-Projects.git
 ```
 Run this command in terminal to clone this repo.
+## Anaconda users
+If you are using Anaconda. Run this code in terminal.
+```bash
+conda activate base
+```
+or you can activate your another environment. Go to install requirements.
+
 ## Install dependencies
 ```bash
 pip install -r requirements.txt
