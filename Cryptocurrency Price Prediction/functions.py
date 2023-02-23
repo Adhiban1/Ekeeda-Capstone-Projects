@@ -11,9 +11,9 @@ from sklearn.linear_model import LinearRegression
 sns.set()
 
 
-def historical_data(coinpair, years=3, column='Open'):
+def historical_data(coinpair, column='Open'):
     end = datetime.now()
-    start = datetime(year=end.year-years, month=end.month, day=end.day)
+    start = end - timedelta(days=365)
     return yf.download(coinpair, start, end)[column]
 
 
@@ -38,7 +38,7 @@ def create_model(coinpair='BTC-USD'):
 
 def last_50days_data(coinpair, column='Open'):
     end = datetime.now()
-    start = end - timedelta(days=50)
+    start = end - timedelta(days=51)
     return yf.download(coinpair, start, end)[column].to_numpy()
 
 
