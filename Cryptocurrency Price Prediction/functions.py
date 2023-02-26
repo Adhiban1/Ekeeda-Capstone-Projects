@@ -38,7 +38,7 @@ def create_model(coinpair='BTC-USD'):
 
 def last_50days_data(coinpair, column='Open'):
     end = datetime.now()
-    start = end - timedelta(days=51)
+    start = end - timedelta(days=50)
     return yf.download(coinpair, start, end)[column].to_numpy()
 
 
